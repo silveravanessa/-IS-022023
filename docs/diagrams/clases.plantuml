@@ -1,0 +1,75 @@
+
+
+@startuml
+
+class Equipo {
+  +Nombre: string
+  +Registro: string
+  --
+  +setNombre(nombre: string): void
+  +setRegistro(registro: string): void
+  +getNombre(): string
+  +getRegistro(): string
+}
+
+class Jugador {
+  +Numero: int
+  +Posicion: string
+  --
+  +setNumero(numero: int): void
+  +setPosicion(posicion: string): void
+  +getNumero(): int
+  +getPosicion(): string
+}
+
+class Entrenador {
+  +NivelAcreditacion: string
+  +AniosExperiencia: int
+  --
+  +setNivelAcreditacion(nivel: string): void
+  +setAniosExperiencia(anios: int): void
+  +getNivelAcreditacion(): string
+  +getAniosExperiencia(): int
+}
+
+class Persona {
+  +Telefono: string
+  +Nombre: string
+  +Direccion: string
+  --
+  +setTelefono(telefono: string): void
+  +setNombre(nombre: string): void
+  +setDireccion(direccion: string): void
+  +getTelefono(): string
+  +getNombre(): string
+  +getDireccion(): string
+}
+
+class Juego {
+  +Localidad: string
+  +Puntuacion: int
+  --
+  +setLocalidad(localidad: string): void
+  +setPuntuacion(puntuacion: int): void
+  +getLocalidad(): string
+  +getPuntuacion(): int
+}
+
+class Capitan {
+  --
+}
+
+
+
+Equipo "1" -- "1" Entrenador
+Equipo "6..20" -- "1" Jugador
+Equipo "1" -- "1" Capitan
+Entrenador "*" -- "1..*" Equipo
+Persona "1" -- "1" Entrenador
+Persona "1" -- "1" Jugador
+Jugador "1" -- "1" Capitan
+Juego "1" -- "1" Equipo
+
+
+
+@enduml

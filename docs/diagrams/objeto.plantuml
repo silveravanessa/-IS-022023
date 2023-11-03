@@ -1,0 +1,181 @@
+@startuml
+
+object Juego{
+    Localidad=Chile
+    PuntuacionE1=6
+    PuntuacionE2=3
+}
+object Equipo1{
+    Nombre=Venezuela
+    Registro=V 3-D 2
+}
+object Equipo2{
+    Nombre=Colombia
+    Registro=V 1-D 3
+}
+object Jugador1{
+    Numero=01
+    Posicion=LD
+}
+object Jugador2{
+    Numero=02
+    Posicion=PD
+}
+object Jugador3{
+    Numero=03
+    Posicion=CD
+}
+object Jugador4{
+    Numero=04
+    Posicion=LZ
+}
+object Jugador5{
+    Numero=05
+    Posicion=PZ
+}
+object Jugador6{
+    Numero=06
+    Posicion=CZ
+}
+object Capitan01{
+}
+object Capitan02{
+}
+object Jugador01{
+    Numero=11
+    Posicion=LD
+}
+object Jugador02{
+    Numero=12
+    Posicion=PD
+}
+object Jugador03{
+    Numero=13
+    Posicion=CD
+}
+object Jugador04{
+    Numero=14
+    Posicion=LZ
+}
+object Jugador05{
+    Numero=15
+    Posicion=PZ
+}
+object Jugador06{
+    Numero=16
+    Posicion=CZ
+}
+object Entrenador01{
+    NivelAcreditacion=oro 
+    AniosExperiencia=14
+}
+object Entrenador02{
+    NivelAcreditacion=plata 
+    AniosExperiencia=5
+}
+object Persona01{
+    Telefono=0412-2256789
+    Nombre=Pablo Perez
+    Direccion= Chacao
+}
+object Persona02{
+    Telefono=0414-5689555
+    Nombre=Francisco Solano
+    Direccion= Caño Amarillo
+}
+object Persona03{
+    Telefono=0416-5352558
+    Nombre=Hugo Maduro
+    Direccion= Alta Gracia
+}
+object Persona04{
+    Telefono=0416-8685323
+    Nombre=Yoguerzon Delgado
+    Direccion= Petare
+}
+object Persona05{
+    Telefono=0212-6541213
+    Nombre=Wilenderson Lopez
+    Direccion= Charallave
+}
+object Persona06{
+    Telefono=Suspendido
+    Nombre=Kevin "Mono" Sojo
+    Direccion= Pinto Salinas
+}
+object Persona07{
+    Telefono=0424-1034689
+    Nombre=Lorenzo Mendoza
+    Direccion= Terrazas del Avila
+}
+object Persona08{
+    Telefono=+57 310744561 
+    Nombre: jhonny celar
+    Direccion= Bella Suiza
+}
+object Persona09{
+    Telefono=+57 3004561237
+    Nombre= Marvin lopez 
+    Direccion= Medellin
+}
+object Persona10{
+    Telefono=+57 3159873214
+    Nombre=Ramadeel Falcino 
+    Direccion= Santa Marta
+}
+object Persona11{
+    Telefono=+57 6547227200
+    Nombre= rafael bonaz 
+    Direccion= Medellin
+}
+object Persona12{
+    Telefono=+57 605885697
+    Nombre=Marcos lopez 
+    Direccion= Bogota
+}
+object Persona13{
+    Telefono=+57 5555444477
+    Nombre= pedro lorenzo 
+    Direccion= Medellin
+}
+object Persona14{
+    Telefono=+57 47512041
+    Nombre= marta gomez
+    Direccion= Medellin
+}
+
+Jugador1--Persona01
+Jugador2--Persona02
+Jugador3--Persona03
+Jugador4--Persona04
+Jugador5--Persona05
+Jugador6--Persona06
+Entrenador01--Persona07
+Jugador01--Persona08
+Jugador02--Persona09
+Jugador03--Persona10
+Jugador04--Persona11
+Jugador05--Persona12
+Jugador06--Persona13
+Entrenador02--Persona14
+Equipo1--Jugador1
+Equipo1--Jugador2
+Equipo1--Jugador3
+Equipo1--Jugador4
+Equipo1--Jugador5
+Equipo1--Jugador6
+Equipo1--Entrenador01
+Equipo2--Jugador01
+Equipo2--Jugador02
+Equipo2--Jugador03
+Equipo2--Jugador04
+Equipo2--Jugador05
+Equipo2--Jugador06
+Equipo2--Entrenador02
+Juego--Equipo1
+Juego--Equipo2
+Equipo1--Capitan01
+Equipo2--Capitan02
+Jugador6--Capitan01
+Jugador02--Capitan02
+@enduml
